@@ -8,6 +8,7 @@
 	<title>Portfolio</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png" sizes="512x512">
 	<link rel="stylesheet" href="tailwind.css">
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,7 +23,8 @@
 				<a href="#" class="text-selected-text">Home</a>
 				<a href="#projects">Projects</a>
 				<a href="#experience">Experience</a>
-				<a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact</button></a>
+				<a href="#contact"><button
+						class="rounded-lg transition ease-in-out hover:scale-110 shadow-lg hover:shadow-indigo-500/50 px-6 py-2 bg-theme font-bold">Contact</button></a>
 			</div>
 			<div class="md:hidden">
 				<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +41,7 @@
 
 			<nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
 				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-					<a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+					<a href="#" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
 						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
 					</a>
 					<a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
@@ -59,9 +61,10 @@
 					YAHYA
 					<br>
 				</h1>
-				<div class="animate-bounce w-full flex justify-center md:justify-start">
+				<div class="w-full flex justify-center md:justify-start">
 					<a href="#experience">
-						<button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+						<button
+							class="animate-bounce px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
 							<div>
 								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +82,7 @@
 				</div>
 			</div>
 			<img src="img/me.jpg" alt="Man"
-				class="object-contain h-3/4 w-3/0 mt-5 md:absolute mt-50 md:ml-10 right-28 -z-1">
+				class="object-contain h-3/4 w-3/0 mt-5 md:absolute mt-50 md:ml-10 top-25 right-40 -z-1">
 		</div>
 	</div>
 
@@ -90,47 +93,53 @@
 			<p class="section-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, atque
 				mollitia, provident quia iure eligendi esse non ad laboriosam ipsum et quidem fugiat! Qui, eos?</p>
 
-			<div class="w-full border border-nav p-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-				<a href="https://github.com/ahay12/Advertising">
+			<div
+				class="w-full border border-nav p-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 rounded-lg">
+				<a class="transition duration-700 ease-out hover:scale-110"
+					href="https://github.com/ahay12/Advertising">
 					<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-						class="w-full bg-nav h-72 lg:h-72 object-cover">
+						class="transition ease-in-out duration-700 origin-center hover:rotate-2 w-full bg-nav h-72 lg:h-72 object-cover">
 					<p class="text-center">Data Analyst/Data Science</p>
 					<p class="text-center section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						Assumenda doloremque illo sint quod, dolorum distinctio.</p>
 				</a>
-				<a href="#">
+				<a class="transition duration-700 ease-in-out hover:scale-110" href="#">
 					<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
 						class="w-full bg-nav h-72 lg:h-72 object-cover">
 					<p class="text-center">Data Analyst/Data Science</p>
 					<p class="text-center section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Magni temporibus nam itaque ad alias aliquam?</p>
 				</a>
-				<a href="">
+				<a class="transition duration-700 ease-in-out hover:scale-110" href="">
 					<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
 						class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
 					<p class="text-center hidden md:block">Data Analyst/Data Science</p>
-					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit.
 						Harum illum nostrum consequuntur, porro qui eos.</p>
 				</a>
-				<a href="">
+				<a class="transition duration-700 ease-in-out hover:scale-110" href="">
 					<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
 						class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
 					<p class="text-center hidden md:block">Data Analyst/Data Science</p>
-					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit.
 						Voluptas magnam quisquam quod nulla, veniam culpa?</p>
 				</a>
-				<a href="">
+				<a class="transition duration-700 ease-in-out hover:scale-110" href="">
 					<img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
 						class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
 					<p class="text-center hidden md:block">Data Analyst/Data Science</p>
-					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit.
 						Voluptas magnam quisquam quod nulla, veniam culpa?</p>
 				</a>
-				<a href="">
+				<a class="transition duration-700 ease-in-out hover:scale-110" href="">
 					<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
 						class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
 					<p class="text-center hidden md:block">Data Analyst/Data Science</p>
-					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<p class="text-center section-paragraph hidden md:block">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit.
 						Voluptas magnam quisquam quod nulla, veniam culpa?</p>
 				</a>
 		</section>
@@ -146,7 +155,7 @@
 			<!-- Experience -->
 			<div class="space-y-12 my-16">
 				<div
-					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-lg">
 
 					<!-- Experience logo -->
 					<div class="mb-6 lg:mb-0">
@@ -175,14 +184,13 @@
 		<section class="w-full">
 			<h2 id="contact" class="secondary-title">Contact</h2>
 			<br>
-			<p class="section-paragraph">amirhakim_07(Telegram)</p>
-			<a href="mailto:amirhakimadilayahya@gmail.com"
-				class="text-secondary underline mt-3 block">amirhakimadilayahya@gmail.com
-			</a>
+			<a href="t.me/amirhakim_07" class="text-secondary hover:underline">Telegram</a>
+			<a href="https://id.linkedin.com/in/amir-hakim-adila-yahya-2951b41b4" class="text-secondary mt-3 block hover:underline">LinkedIn</a>
+			<a href="mailto:amirhakimadilayahya@gmail.com" class="text-secondary hover:underline mt-3 block">Email</a>
 		</section>
 	</div>
 
-	<div class="mt-16"></div>
+	<div class="mt-12"></div>
 
 	<script src="main.js"></script>
 
