@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -19,19 +19,60 @@
 	<header class="py-6">
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<div class="text-lg font-bold">My Portfolio</div>
+
 			<div class="hidden md:flex space-x-12 items-center">
 				<a href="#" class="text-selected-text">Home</a>
 				<a href="#projects">Projects</a>
 				<a href="#experience">Experience</a>
-				<a href="#contact"><button
-						class="rounded-lg transition ease-in-out hover:scale-110 shadow-lg hover:shadow-indigo-500/50 px-6 py-2 bg-theme font-bold">Contact</button></a>
+				<a href="#contact">
+					<button
+						class="rounded-lg transition ease-in-out hover:scale-110 shadow-lg hover:shadow-indigo-500/50 px-6 py-2 bg-theme font-bold">
+						Contact
+					</button>
+				</a>
 			</div>
-			<div class="md:hidden">
-				<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
-						fill="white" /></svg>
+			<div class="hidden md:flex space-x-12 items-center mobile-menu">
+				<ul class="">
+
+					<li>
+						<a href="#" class="text-selected-text">Home</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#experience">Experience</a>
+					</li>
+					<li>
+						<a href="#contact">
+							<button
+								class="rounded-lg transition ease-in-out hover:scale-110 shadow-lg hover:shadow-indigo-500/50 px-6 py-2 bg-theme font-bold">
+								Contact
+							</button>
+						</a>
+					</li>
+				</ul>
 			</div>
+			<div class="md:hidden flex items-center">
+				<button
+					class="flex items-center justify-center text-white bg-theme rounded-lg transition ease-in-out hover:scale-110 shadow-lg hover:shadow-indigo-500/50 px-6 py-2 mobile-menu-button">
+					<svg class="w-6 h-6" x-show="!showMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+
+						<path
+							d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" />
+					</svg>
+				</button>
+			</div>
+			<script>
+				// Grab HTML Elements
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				// Add Event Listeners
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
 		</div>
 	</header>
 
@@ -185,7 +226,8 @@
 			<h2 id="contact" class="secondary-title">Contact</h2>
 			<br>
 			<a href="https://t.me/amirhakim_07" class="text-secondary hover:underline">Telegram</a>
-			<a href="https://id.linkedin.com/in/amir-hakim-adila-yahya-2951b41b4" class="text-secondary mt-3 block hover:underline">LinkedIn</a>
+			<a href="https://id.linkedin.com/in/amir-hakim-adila-yahya-2951b41b4"
+				class="text-secondary mt-3 block hover:underline">LinkedIn</a>
 			<a href="mailto:amirhakimadilayahya@gmail.com" class="text-secondary hover:underline mt-3 block">Email</a>
 		</section>
 	</div>
