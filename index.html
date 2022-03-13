@@ -7,19 +7,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png" sizes="512x512">
-	<link rel="stylesheet" href="tailwind.css">
+	<link rel="stylesheet" href="src/asset/css/tailwind.css">
+	<!-- TailwindCSS -->
 	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- JS -->
+	<script src="src/asset/js/anime.min.js"></script>
+	<script src="src/asset/js/nav.js"></script>
+	<!-- Font Awesome -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="select-none bg-body text-white font-poppins pb-12">
-
 	<header class="py-6">
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-			<div class="text-lg font-bold">My Portfolio</div>
-
+			<!-- nav -->
+			<div class="text-bold">
+				My Portfolio
+			</div>
 			<div class="hidden md:flex space-x-12 items-center">
 				<a href="#" class="text-selected-text">Home</a>
 				<a href="#projects">Projects</a>
@@ -63,16 +69,6 @@
 					</svg>
 				</button>
 			</div>
-			<script>
-				// Grab HTML Elements
-				const btn = document.querySelector("button.mobile-menu-button");
-				const menu = document.querySelector(".mobile-menu");
-
-				// Add Event Listeners
-				btn.addEventListener("click", () => {
-					menu.classList.toggle("hidden");
-				});
-			</script>
 		</div>
 	</header>
 
@@ -96,11 +92,10 @@
 					</a>
 				</div>
 			</nav>
-
 			<div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
-				<h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">AMIR HAKIM ADILA
-					YAHYA
-					<br>
+				<h1 class="font-bold text-5xl md:text-6xl 
+				lg:text-6xl text-center md:text-left">
+					AMIR HAKIM ADILA YAHYA
 				</h1>
 				<div class="w-full flex justify-center md:justify-start">
 					<a href="#experience">
@@ -126,16 +121,15 @@
 				class="object-contain h-3/4 w-3/0 mt-5 md:absolute mt-50 md:ml-10 top-25 right-40 -z-1">
 		</div>
 	</div>
-
 	<!-- My Projects -->
-	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+	<div class="container  mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
 			<h2 id="projects" class="secondary-title">Projects</h2>
 			<p class="section-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, atque
 				mollitia, provident quia iure eligendi esse non ad laboriosam ipsum et quidem fugiat! Qui, eos?</p>
 
-			<div
-				class="w-full border border-nav p-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 rounded-lg">
+			<div class="w-full border border-nav p-16 grid grid-cols-1 md:grid-cols-2 
+				lg:grid-cols-3 gap-6 mt-6 rounded-lg">
 				<a class="transition duration-700 ease-out hover:scale-110"
 					href="https://github.com/ahay12/Advertising">
 					<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
@@ -187,8 +181,6 @@
 	</div>
 
 
-
-
 	<!-- Experience -->
 	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
@@ -206,7 +198,7 @@
 
 					<!-- Experience info -->
 					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-						<h3 class="text-white text-3xl font-semibold">Kementerian Keuangan Republik Indonesia</h3>
+						<h3 class="text-white text-2xl font-semibold">Kementerian Keuangan Republik Indonesia</h3>
 
 						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
 							<div class="badge">Web Designing</div>
@@ -234,7 +226,7 @@
 
 	<div class="mt-12"></div>
 
-	<script src="main.js"></script>
+	<script src="src/asset/js/main.js"></script>
 
 </body>
 
